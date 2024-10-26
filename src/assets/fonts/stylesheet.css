@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'EnnVisions';
+    src: url('EnnVisions-Regular.eot');
+    src: url('EnnVisions-Regular.eot?#iefix') format('embedded-opentype'),
+        url('EnnVisions-Regular.woff2') format('woff2'),
+        url('EnnVisions-Regular.woff') format('woff'),
+        url('EnnVisions-Regular.ttf') format('truetype'),
+        url('EnnVisions-Regular.svg#EnnVisions-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'EnnVisions';
+    src: url('EnnVisions-Light.eot');
+    src: url('EnnVisions-Light.eot?#iefix') format('embedded-opentype'),
+        url('EnnVisions-Light.woff2') format('woff2'),
+        url('EnnVisions-Light.woff') format('woff'),
+        url('EnnVisions-Light.ttf') format('truetype'),
+        url('EnnVisions-Light.svg#EnnVisions-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'EnnVisions';
+    src: url('EnnVisions-Medium.eot');
+    src: url('EnnVisions-Medium.eot?#iefix') format('embedded-opentype'),
+        url('EnnVisions-Medium.woff2') format('woff2'),
+        url('EnnVisions-Medium.woff') format('woff'),
+        url('EnnVisions-Medium.ttf') format('truetype'),
+        url('EnnVisions-Medium.svg#EnnVisions-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'EnnVisions';
+    src: url('EnnVisions-Bold.eot');
+    src: url('EnnVisions-Bold.eot?#iefix') format('embedded-opentype'),
+        url('EnnVisions-Bold.woff2') format('woff2'),
+        url('EnnVisions-Bold.woff') format('woff'),
+        url('EnnVisions-Bold.ttf') format('truetype'),
+        url('EnnVisions-Bold.svg#EnnVisions-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

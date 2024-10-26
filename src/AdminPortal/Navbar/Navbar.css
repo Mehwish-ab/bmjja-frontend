@@ -1,0 +1,167 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f0f2f5;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: white;
+  padding: 5px 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  position: relative;
+  flex-wrap: wrap;
+}
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+.navbar-logo p {
+  font-size: 18px;
+  color: #1f3340;
+  display: block;
+  margin-left: 10px;
+}
+
+/* Search Bar */
+.search-container {
+  flex-grow: 1;
+  margin: 0 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.search-input {
+  width: 100%;
+  max-width: 300px;
+  padding: 8px 12px;
+  border-radius: 25px;
+  border: 1px solid black;
+}
+
+/* Nav Links */
+.nav-links {
+  margin-right: 20px;
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+  margin-top: 15px;
+}
+
+.nav-links li a {
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #8badb7;
+}
+
+/* Profile Dropdown */
+.profile-container {
+  position: relative;
+  margin-bottom: -20;
+}
+
+.profile-image {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  cursor: pointer;
+
+  /* border: 1px solid #ecf0f1; */
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: white;
+  list-style: none;
+  padding: 10px;
+  border-radius: 4px;
+  width: 150px;
+  display: none;
+}
+
+/* Show dropdown when state is true */
+.profile-container:hover .dropdown-menu,
+.profile-container .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li {
+  padding: 10px;
+}
+
+.dropdown-menu li a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #8badb7;
+  color: white;
+}
+
+/* Mobile Menu Icon */
+.mobile-menu-icon {
+  display: none;
+  background: none;
+  border: none;
+  color: black;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .search-container {
+    display: none;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
+  }
+
+  .nav-links.active {
+    height: 200px; /* Adjust based on the number of links */
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+  }
+
+  .profile-container {
+    margin-left: 20px;
+  }
+}

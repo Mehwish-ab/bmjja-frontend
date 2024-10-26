@@ -1,0 +1,183 @@
+@import "~react-quill/dist/quill.snow.css";
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  outline: none;
+  border: none;
+}
+/* .home_page {
+  padding-top: 7.5rem;
+} */
+
+.home_page .signature-section {
+  background: hsl(205, 20%, 17%);
+  padding: 30px 0;
+}
+.home_page .signature-section .text {
+  position: relative;
+}
+
+.home_page .signature-section .text p {
+  color: white;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  line-height: 37px;
+}
+.home_page .signature-section .signature p {
+  font-size: 24px;
+  font-family: "Ephesis", cursive;
+}
+@media screen and (max-width: 992px) {
+  .home_page .signature-section .text p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+/* element.style {
+  padding-top: 7.5rem;
+} */
+body {
+  background-color: #fff;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* margin-top: 3px;
+  margin-bottom: 0px; */
+  margin: 0;
+  font-family: "EnnVisions";
+}
+
+html,
+body,
+p,
+a,
+span,
+label,
+ul li {
+  font-family: "EnnVisions";
+}
+
+.mt-20 {
+  margin-top: 20px !important;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mt-8 {
+  margin-top: 8px;
+}
+
+.ant-modal-body {
+  padding: 0px;
+}
+
+.arrow-box {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 30;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+@font-face {
+  font-family: "EnnVisions";
+  src: local("SFUIText-Regular"),
+    url("./assets/fonts/EnnVisions.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "EnnVisionsMedium";
+  src: local("SFUIText-Regular"),
+    url("./assets/fonts/EnnVisionsMedium.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "EnnVisionsMedium";
+  src: local("SFUIText-Regular"),
+    url("./assets/fonts/EnnVisionsBold.otf") format("truetype");
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.text-14 {
+  font-size: 14px;
+}
+
+.text-16 {
+  font-size: 16px;
+}
+
+.ant-drawer-close {
+  visibility: hidden;
+}
+
+button {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1100px) {
+  .web-view {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .mobile-view {
+    display: none;
+  }
+}
+
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+  width: 100% !important;
+}
+
+@media screen and (max-width: 700px) {
+  .container,
+  .container-fluid,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    width: 95% !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container,
+  .container-fluid,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    width: 90% !important;
+  }
+}

@@ -1,0 +1,19 @@
+Main content .main-content {
+  margin-left: 250px;
+  padding: 20px;
+  background-color: #f5f6fa;
+  min-height: 100vh;
+  transition: margin-left 0.3s;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .main-content {
+    margin-left: 100px;
+  }
+}

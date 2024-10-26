@@ -1,0 +1,111 @@
+.pageLayout {
+  display: flex;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #f5f5f5;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.filterContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.filterBox select {
+  margin-left: 7px;
+  padding: 5px;
+}
+
+/* .filterBox option select:hover{
+  background-color: #8badb7;
+} */
+
+.uploadButton {
+  background-color: #405f74;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.videoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.videoCard {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.videoPreview {
+  position: relative;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.videoInfo {
+  padding: 15px;
+}
+
+.videoInfo p {
+  font-size: 10px;
+  font-family: "EnnVisions";
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+ 
+}
+
+.actions div {
+  cursor: pointer;
+  color: #405f74;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  font-family: "EnnVisions";
+}
+
+.actions svg {
+  margin-right: 5px;
+}
+
+.uploadButton:hover {
+  background-color: #8badb7;
+}
+
+.deleteButtons {
+  background-color: #405f74 ;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.deleteButtons:hover {
+  background-color: #8badb7;
+}

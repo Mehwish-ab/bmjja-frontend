@@ -1,0 +1,86 @@
+.toggle-container {
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  height: 7vh;
+}
+
+.toggle-button {
+  width: 50px;
+  height: 20px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 30px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-button.toggled {
+  background-color: #c8d7dd;
+}
+
+.toggle-circle {
+  width: 15px;
+  height: 15px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: left 0.3s ease;
+}
+
+.toggle-button.toggled .toggle-circle {
+  left: 32px; /* Move to the right */
+}
+
+/* @media (max-width: 600px) {
+  .toggle-button {
+    width: 50px;
+    height: 25px;
+  }
+
+  .toggle-circle {
+    width: 22px;
+    height: 22px;
+  }
+
+  .toggle-button.toggled .toggle-circle {
+    left: 26px;
+  }
+} */
+
+/* Medium screens (min width: 600px and max width: 1024px) */
+/* @media (min-width: 601px) and (max-width: 1024px) {
+  .toggle-button {
+    width: 70px;
+    height: 35px;
+  }
+
+  .toggle-circle {
+    width: 30px;
+    height: 30px;
+  }
+
+  .toggle-button.toggled .toggle-circle {
+    left: 38px;
+  }
+} */
+
+/* Large screens (min width: 1025px) */
+/* @media (min-width: 1025px) {
+  .toggle-button {
+    width: 80px;
+    height: 40px;
+  }
+
+  .toggle-circle {
+    width: 36px;
+    height: 36px;
+  }
+
+  .toggle-button.toggled .toggle-circle {
+    left: 42px;
+  }
+} */

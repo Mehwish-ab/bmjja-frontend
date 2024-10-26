@@ -1,0 +1,30 @@
+/* .home_page {
+  padding-top: 7.5rem;
+} */
+
+.home_page .signature-section {
+  background: hsl(205, 20%, 17%);
+  padding: 30px 0;
+}
+.home_page .signature-section .text {
+  position: relative;
+}
+
+.home_page .signature-section .text p {
+  color: white;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  line-height: 37px;
+}
+.home_page .signature-section .signature p {
+  font-size: 24px;
+  font-family: "Ephesis", cursive;
+}
+@media screen and (max-width: 992px) {
+  .home_page .signature-section .text p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
